@@ -256,7 +256,7 @@ header{
 /* EDUCATION SECTION */
 /* ===================== */
 #education{
-    height: 100vh;
+    height: 100%;
 }
 #education h2{
     color: rgb(255, 153, 0);
@@ -296,13 +296,13 @@ header{
 
 .skill-section{
     text-align: center;
-    background: linear-gradient(rgba(163, 133, 190, 0.9),rgba(255,255,255,0.9)), url(\img/skill-bg.jpg);
+    background: linear-gradient(rgba(60,84,153,0.9),rgba(60,84,153,0.9)), url(\img/skill-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .skill-section h2,
 .skill-section h3{
-    color:rgba(16, 16, 243, 0.986);
+    color: white;
 }
 .skill-section h2::after{
     background: #dfe8ed;
