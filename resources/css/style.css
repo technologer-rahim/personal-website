@@ -1,0 +1,426 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering:optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+    
+}
+
+ul li{
+    list-style-type: none;
+}
+h1{
+    font-size: 4.2rem;
+    color: #fff;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+.clearfix::after{
+    content: ""; 
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ===================== */
+/* RESUSABLE COMPONENTS */
+/* ===================== */
+
+.row{
+    max-width:114rem;
+    margin: 0 auto;
+    margin-left: 15%;
+}
+
+section{
+    padding: 8rem 0;
+    overflow: hidden;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+ 
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background:#fff;
+    width:8.5rem;
+    margin:auto;
+    margin-top: 2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+
+
+
+/* ===================== */
+/* BUTTON */
+/* ===================== */
+.btn:link,
+.btn:visited,
+.btn {
+    background:#333;
+    border-bottom: .3rem solid #000;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: .3rem;]
+    display: inline-block;
+    margin-top: 4.5rem;
+}
+/* ===================== */
+/* PARAGRAPH */
+/* ===================== */
+
+.little-description{
+    font-size: 1.8rem;
+    width:60%;
+    margin-left: 20%;
+    line-height: 3rem;
+}
+
+/* ===================== */
+/* HEADING */
+/* ===================== */
+
+header{
+    background: linear-gradient(rgba(135,80,156,0.7),rgba(135,80,156,0.9)), url(img/download.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height:100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+nav#header-bg{
+    margin-left: 15%;
+}
+.logo{
+    height:3.5rem;
+    width:auto;
+    margin-top:3.5rem;
+    float:left;
+}
+.hero-text-box{
+    width:114rem;
+}
+.hero-text-box a{
+    margin-top: 50rem;
+    overflow: hidden;
+}
+
+.main-nav{
+    float:right;
+    margin-top: 4rem;
+    position: fixed;
+    margin-left: 15%;
+    background: #8f5da0;
+    border-radius: .3rem;
+    padding: 1rem;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100, 58, 121,0);
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background-color:rgba(100, 58, 121,1);
+}
+
+.active{
+    background-color:rgba(100, 58, 121,1);
+    border-radius: .3rem;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 150%;
+    overflow: hidden;
+    padding: 1rem 0;
+    z-index:9999;
+}
+.hero-text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero-text-box h1{
+    text-align: center;
+    font-family: Big Shoulders Display;
+    letter-spacing: .2rem;
+    margin: auto;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s infinite alternate;
+    border-right: .3rem solid black;
+    margin-bottom: 5rem;
+}
+
+
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width:28ch;
+    }
+}
+
+
+.btn-hero:link,
+.btn-hero:visited{
+    background: linear-gradient(rgb(255 0 0 / 90%),rgb(247 160 11 / 90%));
+    margin-top: 4.5rem;
+    border-bottom: blue;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+header{
+    position: relative;
+}
+
+.mobile-menu span{
+    color: #fff;
+    font-size: 4rem;
+    float:right;
+    margin-top:2rem;
+    display:none;
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+.mobile-menu .overly{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+/* ===================== */
+/* EDUCATION SECTION */
+/* ===================== */
+#education{
+    height: 100vh;
+}
+#education h2{
+    color: rgb(255, 153, 0);
+    
+}
+.single-box{
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.box-shadows{
+    box-shadow: 10px 10px 40px rgb(209, 204, 204);
+    height: 30rem;
+    width: 40%;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: .4rem;
+}
+
+.left-gradient{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg,blue, cyan);
+    border-image-slice: 1;
+    background-image: linear-gradient(rgba(250, 159, 131, 0.918), hsl(347, 91%, 67%));
+}
+#education{
+    background: linear-gradient(rgba(60,84,153,0.9),rgba(60,84,153,0.9)), url(\img/education.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===================== */
+/* SKILLS SECTION */
+/* ===================== */
+
+
+.skill-section{
+    text-align: center;
+    background: linear-gradient(rgba(163, 133, 190, 0.9),rgba(255,255,255,0.9)), url(\img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skill-section h2,
+.skill-section h3{
+    color:#3c4761;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    fill: #393939;
+    font-size: 1.5rem;
+}
+
+svg.web-design circle{
+    stroke: #30bae7;
+}
+svg.html-css circle{
+    stroke: #D74680;
+}
+svg.graphic-design circle{
+    stroke: #15C7A8;
+}
+svg.ui-ux circle{
+    stroke: #EB7D4B;
+}
+
+
+/* ===================== */
+/* SERVICES SECTION */
+/* ===================== */
+.services-section{
+    color:#fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background: linear-gradient(rgba(23,194,164,0.9),rgba(71, 167, 231, 0.9)), url(\img/services-bg.jpg);
+   
+}
+.services-section h2::after{
+    background:#14a58c;
+
+}
+
+.services-icon{
+    height: 14rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* ===================== */
+/* CONTENT SECTION */
+/* ===================== */
+
+.contact-section{
+    text-align: center;
+    background: linear-gradient(rgba(60,84,153,0.9),rgba(60,84,153,0.9)), url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    
+}
+.contact-section h2:after{
+    background: #273a71;
+}
+.contact-section E-mail{
+    color: orange;
+}
+.contact-section .little-description{
+    color: #fff
+}
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background: #273A71;
+    border: .1rem solid #273A71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5ren;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: .5;
+}
+.btn-submit{
+    border: 0;
+    border-bottom: .3rem solid  #299EC5;
+    background:#30BAE7 ;
+}
+.contact-section input[type="submit"]{
+    font-size: 2rem;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+.footer-section{
+    background: #344B8E;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: .1rem solid rgba(255,255,255,0.3);
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+.footer-section li a:hover{
+    color: #30bae3;
+}
