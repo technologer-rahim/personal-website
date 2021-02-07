@@ -302,7 +302,7 @@ header{
 }
 .skill-section h2,
 .skill-section h3{
-    color:rgba(16, 16, 243, 0.986);
+    color:rgba(243, 8, 8, 0.986);
 }
 .skill-section h2::after{
     background: #dfe8ed;
